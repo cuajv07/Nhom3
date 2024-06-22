@@ -1,0 +1,161 @@
+OOP
+
+- New dùng để tạo ra 1 bộ nhớ cho đối tượng mới
+
+- Truyền object và truyền mảng vào trong hàm thì là truyền địa chỉ vào trong hàm
+
+- Hàm tạo(Constructor) được sử dụng để tạo đối tượng
+
+- this dùng để xác định xem để tương tác với biến(thuộc tính) nào trong object
+
+- Khi không tạo constructor trong class thì java tự tạo ra cho mình 1 constructor
+
+khônng tham số
+
+- Nếu mình tự tạo 1 constructor thì java tự xoá contructor không tham số.
+
+- Khi tạo constructor giống nhau trong cùng 1 class thì phải thay đổi tham số
+
+hoặc thay đổi kiểu dữ liệu
+
+- Tham trị thì giá trị của tham số sẽ không bị thay đổi
+
+- Tham biến thì giá trị của tham số sẽ bị thay đổi theo
+
+- Tham số biến đổi bản chất là 1 mảng nhưng nó được dùng khi chưa biết số lượng
+
+phần tử. Khai báo ( int ...array)
+
+- Khi dùng tham số biến đổi thì nên dùng for each, và tham số biến đổi phải là 
+
+tham số cuối cùng 
+
+	VD: sum(int c, int ...arr)
+
+- Khi lập trình hướng đối tượng thì phải thông qua hàm GET và SET để thay đổi dữ
+
+liệu chứ không cho trực tiếp thay đổi dữ liệu . 
+
+- hàm toString trả về 1 chuỗi cơ bản các thông tin về đối tượng mà người lập trình 
+
+muốn hiển thị 
+
+- static thường thì sẽ được chia sẻ 1 vùng nhớ trong class, khi khai báo đối tượng
+
+thì các đối tượng đều dùng chung vùng nhớ này
+
+- Khi khai báo static trong 1 class thì các đối tượng sẽ dùng chung cái vùng nhớ đó.
+
+- Class final không cho phép kế thừa
+
+- phương thức final không cho phép ghi đè
+
+- thuộc tính final không thể thay đổi giá trị
+
+- equal là so sánh 2 đối tượng với nhau theo kiểu "=="
+
+- Class ở 2 package có thể đặt tên giống nhau, nhưng phải có 1 cái gì đó
+
+để phân biệt chúng
+
+- Tính kế thừa là tạo 1 class cha và các lớp con kế thừa lại lớp cha, tái
+
+sử dụng lại mã nguồn 
+
+- private, final ở lớp cha thì lớp con không được kế thừa
+
+- super() gọi đến contructor đầy đủ tham số của lớp cha
+
+- Ghi đè phương thức(overriding)
+
+- khi muốn gọi đến method của lớp cha thì lớp con dùng từ super.method
+
+- phương thức private, final, static thì không thể truy cập
+
+- abstract class tạo các phương thức khuôn. class thông thường k thể có
+
+abstract mothod
+
+-Upcasting khi ép kiểu về lớp cha chỉ có thể gọi được phương thức của lớp cha
+
+, phương thức của lớp con thì không gọi được
+
+- Các phương thức ghi đè từ lớp cha ở lớp con, nếu ép kiểu con về kiểu cha thì nó 
+
+vẫn dùng nguyên cái phương thức mà nó ghi đè
+
+- instanceof dùng để kiểm tra xem đối tượng đó có liên quan đến đối tượng cha
+
+- Tham chiếu đối tượng trong 1 hàm , khi khai báo lớp cha vào . Khi truyền vào hàm
+
+thì có thể truyền bất kì lớp con nào trong lớp cha . 
+
+- overloading có cùng tên phương thức nhưng số lượng tham số truyền vào phải khác
+
+nhau. Được sử dụng để thu được tính đa hình tại thời điểm biên dịch chương trình
+
+- có 2 cách nạp chồng: Thay đổi số lượng tham số, thay đổi kiểu dữ liệu tham số
+
+- interface có thể kế thừa lại đc nhiều interface
+
+- Tạo interface để chứa các phương thức để khi các class con IMPLEMENT interface 
+
+thì sẽ được override toàn bộ các phương thức trong interface
+
+- Checked exception xảy ra trong lúc code và bắt ng lập trình phải xử lí luôn
+
+- Unchecked exception xảy ra trong quá trình biên dịch mà không kiểm tra trong quá 
+
+quá trình code
+
+- Xử lí ngoại lệ bằng try...catch 
+
+- Exception là class của tất cả các lỗi
+
+- Khối try...catch chạy từ đầu try đến catch cuối mà k lặp lại try
+
+- Catch chỉ được thực hiện khi trong try phát hiện ra ngoại lệ liên quan đến
+
+catch mà là ngoại lệ đầu tiên JVM bắt được.
+
+- khối lệnh trong finally thì luôn luôn phải được thực thi, nó chỉ không được thực thi khi 
+
+chương trình bị thoát bằng cách gọi system.exit
+
+- Throws sử dụng ở ngay đầu phương thức, throw dùng trong thân của phương thức
+
+- Throws chỉ cảnh báo ở trong phương thức đó có exception, còn throw là ném 1 cái cảnh báo
+
+ngoại lệ khi run chương trình
+
+- tự định nghĩa ngoại lệ bằng extend Exception
+
+- 1 số các phương thức thường dùng của linkedList
+
+	LinkedList<Data_Type> list_Name = new LinkedList<>();
+	
+	list_Name.set(index,value) sửa giá trị ở vị trí
+
+- Queue dùng để quản lí 1 tập hợp để không bị sai sót tập hợp nào cả. Và thực hiện thêm vào
+
+cuối và lấy ra từ phần tử đầu tiên
+
+- List có thêm các phần tử giống nhau
+
+- Queue là danh sách tuần tự các đối tượng và chỉ lấy được phần tử đầu tiên
+
+- set là 1 tập hợp các phần tử không tuần tự, các phần tử không được phép trùng nhau
+
+- SorttedSet là 1 interface con của Set và chứa các phần tử có thứ tự
+
+- Iterator<Data_type> iterator = đốitượng.iterator() dùng cho set vì không có thứ tự
+
+- Khi add 1 đối tượng vào List thì list đó lưu địa chỉ của đối tượng và quản lí đối tượng 
+
+đó theo địa chỉ, nếu có 1 list khác cũng lưu cái đối tượng đó thì list khác cũng quản lí 
+
+địa chỉ của đối tượng 
+
+
+
+
